@@ -73,20 +73,20 @@ export default siteConfig({
   ],
   navigationLinksBlock: [
     {
-      title: 'Iphone App Development',
-      pageId: 'cce78621c8044bedbdd5cb94d300d4f7'
+      title:'Iphone App Development',
+      pageId:'cce78621c8044bedbdd5cb94d300d4f7'
     },
     {
-      title: 'Android App Development',
-      pageId: '786f4b0e1ffc48dc97339c53fba61b92'
+      title:'Android App Development',
+      pageId:'786f4b0e1ffc48dc97339c53fba61b92'
     },
     {
-      title: 'Custom App Development',
-      pageId: 'c5a3eca146564f5c9efa04b50caa35a4'
+      title:'Custom App Development',
+      pageId:'c5a3eca146564f5c9efa04b50caa35a4'
     },
     {
-      title: 'Desktop App Development',
-      pageId: 'c459b45acafc471ab2846c25655241ab'
+      title:'Desktop App Development',
+      pageId:'c459b45acafc471ab2846c25655241ab'
     }
-  ]
+  ],
 })

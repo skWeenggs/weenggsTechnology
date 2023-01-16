@@ -245,12 +245,12 @@ export const NotionPage: React.FC<types.PageProps> = ({
   return (
     <>
       <PageHead
-        pageId={pageId}
+        // pageId={pageId}
         site={site}
         title={title}
         description={socialDescription}
         image={socialImage}
-        url={canonicalPageUrl}
+        // url={canonicalPageUrl}
       />
 
       {isLiteMode && <BodyClassName className='notion-lite' />}
@@ -259,7 +259,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
       <NotionRenderer
         bodyClassName={cs(
           styles.notion,
-          pageId === site.rootNotionPageId && 'index-page'
+          // pageId === site.rootNotionPageId && 'index-page'
         )}
         darkMode={isDarkMode}
         components={components}
