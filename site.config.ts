@@ -74,11 +74,11 @@ export default siteConfig({
   navigationLinksBlock: [
     {
       title:'Iphone App Development',
-      pageId:'cce78621c8044bedbdd5cb94d300d4f7'
+      pageId:'226ffcbc5ff4405c9e7cffc259f67790'
     },
     {
       title:'Android App Development',
-      pageId:'786f4b0e1ffc48dc97339c53fba61b92'
+      pageId:'a30dcb07c8c943afa8b19b1988254bdb'
     },
     {
       title:'Custom App Development',
