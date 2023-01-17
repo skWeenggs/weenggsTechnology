@@ -51,9 +51,7 @@ export const NotionPageHeader: React.FC<{
   }, [open])
   const [menu,setMenu]=React.useState(false);
   
-  // const res = () => {
-    
-  // }
+ 
   const handlemenu=React.useCallback(()=>{
    setMenu(!menu);
 
@@ -63,10 +61,7 @@ export const NotionPageHeader: React.FC<{
       <div className='notion-nav-header'>
         <Breadcrumbs block={block} rootOnly={true} />
         
-        {/* <div>
-      The current window dimensions are:{' '}
-      <code>{JSON.stringify({ width, height })}</code>
-    </div> */}
+      
            {width <=676   ? (
               <>
               {menu?null:<button id='menu' className='menu-icon' onClick={handlemenu}><FaBars /></button>}
