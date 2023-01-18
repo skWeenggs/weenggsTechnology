@@ -78,23 +78,30 @@ export const NotionPageHeader: React.FC<{
 
                 if (link.pageId) {
                   return (
-                    <components.PageLink
+                    <Link
                       href={mapPageUrl(link.pageId)}
                       key={index}
+                      >
+                      <div
                       className={cs(styles.navLink, 'breadcrumb', 'button')}
-                    >
+                      >
                       {link.title}
-                    </components.PageLink>
+                      </div>
+                    </Link>
                   )
                 } else {
                   return (
-                    <components.Link
-                      href={link.url}
+                    <Link
+                     href={link.url}
+                     >
+
+                    <div
                       key={index}
                       className={cs(styles.navLink, 'breadcrumb', 'button')}
-                    >
+                      >
                       {link.title}
-                    </components.Link>
+                    </div>
+                    </Link>
                   )
                 }
               })
@@ -115,26 +122,32 @@ export const NotionPageHeader: React.FC<{
                   return(
 
                     <nav key={index}  className="navlist"> 
-                    <components.PageLink
-                      href={mapPageUrl(link.pageId)}
+                    <Link
+                    href={mapPageUrl(link.pageId)}
+                    >
+                    <div
                       key={index}
                       className={cs(styles.navLink, 'breadcrumb', 'button')}
                       // className='list'
-                    >   
+                      >   
                       {link.title}    
                       
-                    </components.PageLink>
+                    </div>
+                      </Link>
                       </nav>
                   )
                 } else {
                     return (
-                      <components.Link
+                      <Link 
                         href={link.url}
+                      >
+                      <div
                         key={index}
                         className={cs(styles.navLink, 'breadcrumb', 'button')}
-                      >
+                        >
                         {link.title}
-                      </components.Link>
+                      </div>
+                      </Link>
                     )
                   }
                 }).filter(Boolean)}
@@ -168,24 +181,29 @@ export const NotionPageHeader: React.FC<{
 
                 if (link.pageId) {
                   return (
-
-                    <components.PageLink
+                    <Link 
                       href={mapPageUrl(link.pageId)}
+                    >
+                    <div
                       key={index}
                       className={cs(styles.navLink, 'breadcrumb', 'button')}
-                    >
+                      >
                       {link.title}
-                    </components.PageLink>
+                    </div>
+                    </Link> 
                   )
                 } else {
                   return (
-                    <components.Link
+                    <Link
                       href={link.url}
+                    >
+                      <div
                       key={index}
                       className={cs(styles.navLink, 'breadcrumb', 'button')}
-                    >
-                      {link.title}
-                    </components.Link>
+                      >
+                       {link.title}
+                     </div>
+                    </Link>
                   )
                 }
               })
@@ -206,15 +224,18 @@ export const NotionPageHeader: React.FC<{
                   return(
 
                     <nav key={index}  className="navlist"> 
-                    <components.PageLink
-                      href={mapPageUrl(link.pageId)}
+                    <Link
+                    href={mapPageUrl(link.pageId)}
+                    >
+                    <div
                       key={index}
                       className={cs(styles.navLink, 'breadcrumb', 'button')}
                       // className='list'
-                    >   
+                      >   
                       {link.title}    
                       
-                    </components.PageLink>
+                    </div>
+                      </Link>
                       </nav>
                   )
                 } else {
