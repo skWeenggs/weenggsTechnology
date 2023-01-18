@@ -64,11 +64,11 @@ export const NotionPageHeader: React.FC<{
       
            {width <=676   ? (
               <>
-              {menu?null:<button id='menu' className='menu-icon' onClick={handlemenu}><FaBars /></button>}
+              {menu?null:<button id='menu' className='menu-icon' style={{marginTop:'-10px'}} onClick={handlemenu}><FaBars /></button>}
               {menu?(
                 <>
-                <div className='notion-nav-header-rhs breadcrumbs'>
-                <button id='menu'  className='menu-icon' onClick={handlemenu}><FaBars /></button>
+                <div className='notion-nav-header-rhs breadcrumbs ' style={{position:'absolute',width:"95%",'marginTop':"20px" }}>
+                <button id='menu'  className='menu-icon ' onClick={handlemenu}><FaBars /></button>
 
             {navigationLinks
               ?.map((link, index) => {
@@ -78,7 +78,6 @@ export const NotionPageHeader: React.FC<{
 
                 if (link.pageId) {
                   return (
-
                     <components.PageLink
                       href={mapPageUrl(link.pageId)}
                       key={index}
@@ -159,7 +158,6 @@ export const NotionPageHeader: React.FC<{
               )
              :
            
-
             <div className='notion-nav-header-rhs breadcrumbs'>
 
             {navigationLinks
