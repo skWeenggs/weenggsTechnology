@@ -240,13 +240,16 @@ export const NotionPageHeader: React.FC<{
                   )
                 } else {
                     return (
-                      <components.Link
+                      <Link
                         href={link.url}
+                      >
+                      <div
                         key={index}
                         className={cs(styles.navLink, 'breadcrumb', 'button')}
-                      >
+                        >
                         {link.title}
-                      </components.Link>
+                      </div>
+                      </Link>
                     )
                   }
                 }).filter(Boolean)}
