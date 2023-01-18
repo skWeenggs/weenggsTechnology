@@ -17,6 +17,7 @@ import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
+import Link from 'next/link'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
 
@@ -39,7 +40,9 @@ export const FooterImpl: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <div >
-      <img src={'https://www.weenggs.com/wp-content/uploads/2019/01/WeEnggWeb-1.png'} />
+      <Link href="/" >
+      <img src={'https://www.weenggs.com/wp-content/uploads/2019/01/WeEnggWeb-1.png'} style={{cursor:'pointer'}} />
+      </Link>  
       <div className={styles.copyright}>Copyright 2022 {config.author}</div>
       </div>
       <div >
