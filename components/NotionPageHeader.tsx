@@ -230,7 +230,6 @@ export const NotionPageHeader: React.FC<{
                     <div
                       key={index}
                       className={cs(styles.navLink, 'breadcrumb', 'button')}
-                      // className='list'
                       >   
                       {link.title}    
                       
