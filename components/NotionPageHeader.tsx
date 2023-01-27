@@ -7,7 +7,7 @@ import { Breadcrumbs, Header, Search, useNotionContext } from 'react-notion-x'
 
 import { isSearchEnabled, navigationLinks, navigationStyle ,navigationLinksBlock} from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
-import Link from 'next/link'
+
 import { FaBars } from "@react-icons/all-files/fa/FaBars";
 import styles from './styles.module.css'
 import { useWindowSize } from 'react-use'
