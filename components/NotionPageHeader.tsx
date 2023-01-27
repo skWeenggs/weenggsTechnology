@@ -78,7 +78,7 @@ export const NotionPageHeader: React.FC<{
 
                 if (link.pageId) {
                   return (
-                    <Link
+                    <components.PageLink
                       href={mapPageUrl(link.pageId)}
                       key={index}
                       >
@@ -87,11 +87,11 @@ export const NotionPageHeader: React.FC<{
                       >
                       {link.title}
                       </div>
-                    </Link>
+                    </components.PageLink>
                   )
                 } else {
                   return (
-                    <Link
+                    <components.PageLink
                      href={link.url}
                      >
 
@@ -101,7 +101,7 @@ export const NotionPageHeader: React.FC<{
                       >
                       {link.title}
                     </div>
-                    </Link>
+                    </components.PageLink>
                   )
                 }
               })
@@ -122,7 +122,7 @@ export const NotionPageHeader: React.FC<{
                   return(
 
                     <nav key={index}  className="navlist"> 
-                    <Link
+                    <components.PageLink
                     href={mapPageUrl(link.pageId)}
                     >
                     <div
@@ -133,12 +133,12 @@ export const NotionPageHeader: React.FC<{
                       {link.title}    
                       
                     </div>
-                      </Link>
+                      </components.PageLink>
                       </nav>
                   )
                 } else {
                     return (
-                      <Link 
+                      <components.PageLink
                         href={link.url}
                       >
                       <div
@@ -147,7 +147,7 @@ export const NotionPageHeader: React.FC<{
                         >
                         {link.title}
                       </div>
-                      </Link>
+                      </components.PageLink>
                     )
                   }
                 }).filter(Boolean)}
@@ -181,7 +181,7 @@ export const NotionPageHeader: React.FC<{
 
                 if (link.pageId) {
                   return (
-                    <Link 
+                    <components.PageLink
                       href={mapPageUrl(link.pageId)}
                     >
                     <div
@@ -190,11 +190,11 @@ export const NotionPageHeader: React.FC<{
                       >
                       {link.title}
                     </div>
-                    </Link> 
+                    </components.PageLink> 
                   )
                 } else {
                   return (
-                    <Link
+                    <components.PageLink
                       href={link.url}
                     >
                       <div
@@ -203,7 +203,7 @@ export const NotionPageHeader: React.FC<{
                       >
                        {link.title}
                      </div>
-                    </Link>
+                    </components.PageLink>
                   )
                 }
               })
@@ -224,7 +224,7 @@ export const NotionPageHeader: React.FC<{
                   return(
 
                     <nav key={index}  className="navlist"> 
-                    <Link
+                    <components.PageLink
                     href={mapPageUrl(link.pageId)}
                     >
                     <div
@@ -235,12 +235,12 @@ export const NotionPageHeader: React.FC<{
                       {link.title}    
                       
                     </div>
-                      </Link>
+                      </components.PageLink>
                       </nav>
                   )
                 } else {
                     return (
-                      <Link
+                      <components.PageLink
                         href={link.url}
                       >
                       <div
@@ -249,7 +249,7 @@ export const NotionPageHeader: React.FC<{
                         >
                         {link.title}
                       </div>
-                      </Link>
+                      </components.PageLink>
                     )
                   }
                 }).filter(Boolean)}
