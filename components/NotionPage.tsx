@@ -278,7 +278,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         mapImageUrl={mapImageUrl}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
-        footer={footer}
+        // footer={footer}
       />
 
       {/* <GitHubShareButton /> */}
